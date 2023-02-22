@@ -1,46 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
     <title>DOM Events</title>
-    <style>
-        div#area{
-            font: normal 20pt Arial;
-            background: purple;
-            color: cyan;
-            width: 200px;
-            height: 200px;
-            line-height: 200px;
-            text-align: center;
-
-        }
-    </style>
 </head>
+
 <body>
     <div id="area">
         Interact...
     </div>
 
-    <script>
-        var area = window.document.getElementById('area')
-        area.addEventListener('click', go_click)
-        area.addEventListener('mouseenter', log_in)
-        area.addEventListener('mouseout', go_out)
-
-        function go_click() {
-            area.innerText = 'Click!'
-            area.style.background = 'green'
-        }
-        function log_in() {
-            area.innerText = 'Get in!'
-            area.style.background = 'yellow'
-        }
-        function go_out() {
-            area.innerText = 'Go out!'
-            area.style.background = 'blue'
-        }
-    </script>
 </body>
+
 </html>
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body{
+        background-color: black;
+    }
+
+    div#area{
+        font: bold 20pt Arial;
+        height: 200px;
+        width: 200px;
+        background-color: purple;
+        color: white;
+        text-align: center;
+        line-height: 200px;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+<script>
+    var area = document.querySelector('div#area')
+    area.addEventListener('click', clicar)
+    area.addEventListener('mouseenter', entrar)
+    area.addEventListener('mouseout', sair)
+    function clicar(){
+        area.innerText = 'Clicou'
+        area.style.background = 'green'
+    }
+    
+    function entrar(){
+        area.innerText = 'Entrou'
+        area.style.background = 'blue'
+    }
+
+    function sair(){
+        area.innerText = 'Saiu'
+        area.style.background = 'red'
+    
+    }
+
+</script>
