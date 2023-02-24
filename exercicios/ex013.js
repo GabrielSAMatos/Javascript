@@ -1,25 +1,38 @@
 var agora = new Date()
 var diaSem = agora.getDay()
+
+/* 
+    0 - Domingo
+    1 - Segunda
+    2 - Terça
+    3 - Quarta
+    4 - Quinta 
+    5 - Sexta
+    6 - Sábado
+*/
+
 switch(diaSem){
+    case 0:
+        console.log('Hoje é: Domingo')
+        break
     case 1:
-        console.log('Segunda')
+        console.log('Hoje é: Segunda')
         break
     case 2:
-        console.log('Terça')
+        console.log('Hoje é: Terça')
         break
     case 3:
-        console.log('Quarta')
-        break
+        console.log('Hoje é: Quarta')
+        break 
     case 4:
-        console.log('Quinta')
+        console.log('Hoje é: Quinta')
         break
     case 5:
-        console.log('Sexta')
+        console.log('Hoje é: Sexta')
         break
     case 6:
-        console.log('Sábado')
+        console.log('Hoje é: Sábado')
         break
     default:
-        console.log('domingo')
-        break
+        console.log('ERRO. Dia inválido')
 }
