@@ -7,30 +7,37 @@
 }
 
 body{
-    background-color: black;
-    color: white;
+    background-color: rgba(54, 115, 185, 0.897);
 }
 
-header h1{
+h1{
+    color: white;
     text-align: center;
     padding: 20px;
 }
 
 section{
     background-color: white;
-    color: black;
-    width: 400px;
+    width: 420px;
     margin: auto;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgb(54, 54, 54);
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
 }
 
-label, input, #res{
-    margin-top: 20px;
+section > div#cont{
+    padding-top: 20px;
+    padding-left: 20px;
+
 }
 
-label, input#but, #res{
-    margin-left: 10px;
+section > div#res{
+    margin: 20px;
+    padding-bottom: 30px;
+}
+
+select#seltab{
+    padding-left: 10px;
 }
 
 footer{
