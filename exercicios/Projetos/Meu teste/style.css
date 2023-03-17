@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+:root{
+    --corV: #5AFF15;
+    --corF: #C5283D;
+    --mostarda: #F5B700;
+    --roxoescuro: #20063B;
+    --roxoclaro: #BC96E6;
+    --azulverde: #00635D;
+    --azulclaro: #08A4BD;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor1);
+}
+
+body{
+    background-image: linear-gradient(180deg, var(--roxoclaro), var(--roxoescuro));
+    background-attachment: fixed;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding: 100px 0px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.342);
+}
+
+section{
+    background-image: linear-gradient(to bottom, var(--azulclaro), var(--azulverde));
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #20063b67;
+    padding: 20px;
+}
+
+#pergunta{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+div > div.dentro{
+    background-color: #20063B;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    width: 250px;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid var(--roxoclaro);
+}
+/*
+div > div.dentro:hover{
+    background-color: var(--roxoclaro);
+    transition: 0.7s;
+    border: 2px solid var(--roxoescuro);
+    color: black;
+}
+*/ 
+
+div > div#recomecar:hover{
+    color: black;
+    background-color: white;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid black;
+    margin: auto;
+    transition: 1s;
+}
