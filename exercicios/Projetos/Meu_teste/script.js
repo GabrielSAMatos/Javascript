@@ -1,12 +1,316 @@
 document.addEventListener('DOMContentLoaded', function() {
+let cont = 0
+let acerto = 0
+let pergunta = document.querySelector("div#pergunta")
+let res1 = document.querySelector("div#res1")
+let res2 = document.querySelector("div#res2")
+let res3 = document.querySelector("div#res3")
+let res4 = document.querySelector("div#res4")
+let resultado = document.querySelector("div#resultado")
+let recomeco = document.querySelector("div#recomecar") 
+
+res1.addEventListener('click', clicar1)
+res2.addEventListener('click', clicar2)
+res3.addEventListener('click', clicar3)
+res4.addEventListener('click', clicar4)
+
+recomeco.addEventListener('click', recomecar)
+const intervalo = '800'
+
+function verdade(res){
+    res.style.backgroundColor = 'green'
+    setTimeout(function() {
+        res.style.backgroundColor = '#20063B'
+    }, intervalo);
+}
+
+function falso(res){
+    res.style.backgroundColor = 'red'
+    setTimeout(function(){
+        res.style.backgroundColor = '#20063B'
+    }, intervalo)
+}
+
+function pt2(){
+    setTimeout(function(){
+        pergunta.innerHTML = 'Quem fala a frase "Vira homem, porr@!"'
+        res1.innerHTML = 'Capitão Nascimento'
+        res2.innerHTML = 'Bolsonaro'
+        res3.innerHTML = 'Thomas Shelby'
+        res4.innerHTML = 'Gato de Botas'
+    }, intervalo)
+}
+
+function pt3(){
+    setTimeout(function(){
+        pergunta.innerHTML = 'Qual o melhor urso?'
+        res1.innerHTML = 'Pardo'
+        res2.innerHTML = 'Negro'
+        res3.innerHTML = 'Polar'
+        res4.innerHTML = 'Panda'
+    }, intervalo)
+}
+
+function pt4(){
+    setTimeout(function(){
+        pergunta.innerHTML = 'Por qual gênero Gabriel SA Matos se identifica?'
+        res1.innerHTML = 'Masculino'
+        res2.innerHTML = 'Feminino'
+        res3.innerHTML = 'Neutro'
+        res4.innerHTML = 'Sinto falta dos meus semelhantes'
+    }, intervalo);
+}
+
+function ptresultado(){
+    setTimeout(function(){
+        calculo()
+        pergunta.style.display = 'none'
+        res1.style.display = 'none'
+        res2.style.display = 'none'
+        res3.style.display = 'none'
+        res4.style.display = 'none'
+        recomeco.style.display = 'block'
+        resultado.style.display = 'block'
+    }, intervalo)
+}
+
+function recomecar(){
+    setTimeout(function(){
+        cont = 0
+        acerto = 0
+        res1.innerHTML = 'Sousa de Abreu'
+        res2.innerHTML = 'Santos de Almeida'
+        res3.innerHTML = 'Silva de Alcantra'
+        res4.innerHTML = 'Serbastião de Acarecanga'
+        pergunta.innerHTML = 'Qual o nome completo do Gabriel?'
+
+        pergunta.style.display = 'block'
+        res1.style.display = 'block'
+        res2.style.display = 'block'
+        res3.style.display = 'block'
+        res4.style.display = 'block'
+        resultado.style.display = 'none'
+        recomeco.style.display = 'none'        
+    }, intervalo);
+}
+
+function calculo(){
+    if(acerto == 0){
+        resultado.innerHTML = '0%'
+        resultado.style.color = 'black'
+    }else if(acerto == 1){
+        resultado.innerHTML = '25%'
+        resultado.style.color = 'red'
+    }else if(acerto == 2){
+        resultado.innerHTML = '50%'
+        resultado.style.color = '#F5B700'
+    }else if (acerto == 3){
+        resultado.innerHTML = '75%'
+        resultado.style.color = '#00635D'
+    }else if (acerto == 4){
+        resultado.innerHTML = '100%'
+        resultado.style.color = 'green'
+    }else{
+        alert('ERRO')
+    }
+}
+
+function clicar1(){
+    cont++
+    if(cont == 1){
+        acerto ++
+        verdade(res1)
+        falso(res2)
+        falso(res3)
+        falso(res4)
+        pt2()
+    }else if(cont == 2){
+        falso(res1)
+        falso(res2)
+        falso(res3)
+        falso(res4)
+        pt3()
+    }else if(cont == 3){
+        falso(res1)
+        falso(res2)
+        falso(res3)
+        falso(res4)
+        pt4()
+    }else if(cont ==4){
+        falso(res1)
+        falso(res2)
+        falso(res3)
+        falso(res4)
+        ptresultado()
+    }
+}
+
+function clicar2(){
+    cont++
+    if(cont == 1){
+        falso(res1)
+        falso(res2)
+        falso(res3)
+        falso(res4)
+        pt2()
+    }else if(cont == 2){
+        falso(res1)
+        falso(res2)
+        falso(res3)
+        falso(res4)
+        pt3()
+    }else if(cont == 3){
+        acerto++
+        verdade(res2)
+        falso(res1)
+        falso(res3)
+        falso(res4)
+        pt4()
+    }else if(cont ==4){
+        falso(res1)
+        falso(res2)
+        falso(res3)
+        falso(res4)
+        ptresultado()
+    }
+}
+
+function clicar3(){
+    cont++
+    if(cont == 1){
+        falso(res1)
+        falso(res2)
+        falso(res3)
+        falso(res4)
+        pt2()
+    }else if(cont == 2){
+        acerto++
+        verdade(res3)
+        falso(res1)
+        falso(res2)
+        falso(res4)
+        pt3()
+    }else if(cont == 3){
+        falso(res1)
+        falso(res2)
+        falso(res3)
+        falso(res4)
+        pt4()
+    }else if(cont ==4){
+        falso(res1)
+        falso(res2)
+        falso(res3)
+        falso(res4)
+        ptresultado()
+    }
+}
+
+function clicar4(){
+    cont++
+    if(cont == 1){
+        falso(res1)
+        falso(res2)
+        falso(res3)
+        falso(res4)
+        pt2()
+    }else if(cont == 2){
+        falso(res1)
+        falso(res2)
+        falso(res3)
+        falso(res4)
+        pt3()
+    }else if(cont == 3){
+        falso(res1)
+        falso(res2)
+        falso(res3)
+        falso(res4)
+        pt4()
+    }else if(cont ==4){
+        acerto++
+        verdade(res4)
+        falso(res1)
+        falso(res2)
+        falso(res3)
+        ptresultado()
+
+    }
+}
+
+})
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
     let cont = 0
+    let acerto = 0
+
     let res1 = document.querySelector("#res1")
     let res2 = document.querySelector("#res2")
     let res3 = document.querySelector("#res3")
     let res4 = document.querySelector("#res4")
     let pergunta = document.querySelector("#pergunta")
     let recomeco = document.querySelector("#recomecar")
-    let acerto = 0
 
     res1.addEventListener('click', clicar)
     res2.addEventListener('click', clicar)
@@ -33,10 +337,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const corverdade = 'green'
     const corfalsa = 'red'
     const roxoescuro = '#20063B'
-    const roxoclaro = '#BC96E6'
     const mostarda = '#F5B700'
     const transicao = '800'
-    const transicaorapida = '80'
     
     function verdade(res){
         res.style.background = corverdade
@@ -50,53 +352,6 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function(){
             res.style.background = roxoescuro
         }, transicao)
-    }
-    
-    function entrou(res){
-        setTimeout(function(){
-            res.style.background = roxoclaro
-            res.style.border = `2px solid ${roxoescuro}`
-        }, transicaorapida)
-    }
-    
-    
-    function saiu(res){
-        setTimeout(function(){
-            res.style.background = roxoescuro
-            res.style.border = `2px solid ${roxoclaro}`
-        }, transicaorapida)
-    }
-    
-    function entrar1(){
-        entrou(res1)
-    }
-    
-    function entrar2(){
-    entrou(res2)
-    }
-
-    function entrar3(){
-    entrou(res3)
-    }
-
-    function entrar4(){
-    entrou(res4)
-    }
-
-    function sair1(){
-    saiu(res1)
-    }
-
-    function sair2(){
-    saiu(res2)
-    }
-
-    function sair3(){
-    saiu(res3)
-    }
-
-    function sair4(){
-        saiu(res4)
     }
     
     function pt2(){
@@ -271,6 +526,4 @@ document.addEventListener('DOMContentLoaded', function() {
             cont = 0
         }, transicao)
     }
-})
-
-
+    */

@@ -32,6 +32,7 @@ h1{
 section{
     background-image: linear-gradient(to bottom, var(--azulclaro), var(--azulverde));
     width: 400px;
+    height: 380px;
     margin: auto;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #20063b67;
@@ -44,7 +45,7 @@ section{
 }
 
 div > div.dentro{
-    background-color: #20063B;
+    background-color: var(--roxoescuro);
     text-align: center;
     margin: auto;
     margin-top: 20px;
@@ -52,25 +53,44 @@ div > div.dentro{
     width: 250px;
     color: white;
     border-radius: 50px;
-    border: 2px solid var(--roxoclaro);
-}
-/*
-div > div.dentro:hover{
-    background-color: var(--roxoclaro);
-    transition: 0.7s;
     border: 2px solid var(--roxoescuro);
-    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
+    cursor: pointer;
 }
-*/ 
+div > div.dentro:hover{
+    border: 2px solid var(--roxoclaro);
+    transition: 0.7s;
+}
 
-div > div#recomecar:hover{
-    color: black;
-    background-color: white;
+div > div#resultado{
+    display: none;
+    font-size: 10em;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+div > div#recomecar{
+    display: none;
+    margin: auto;
+    color: white;
+    background-color: black;
     padding: 15px;
     width: 200px;
     text-align: center;
     border-radius: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+div > div#recomecar:hover{
+    background-color: white;
+    color: black;
     border: 2px solid black;
-    margin: auto;
     transition: 1s;
+}
+
+@media screen and (min-width: 769px){
+    section{
+        width: 700px;
+    }
 }
