@@ -82,7 +82,7 @@ function recomecar(){
         res2.innerHTML = 'Santos de Almeida'
         res3.innerHTML = 'Silva de Alcantra'
         res4.innerHTML = 'Serbastião de Acarecanga'
-        pergunta.innerHTML = 'Qual o nome completo do Gabriel?'
+        pergunta.innerHTML = 'O que signfica "SA" de Gabriel SA Matos?'
 
         pergunta.style.display = 'block'
         res1.style.display = 'block'
