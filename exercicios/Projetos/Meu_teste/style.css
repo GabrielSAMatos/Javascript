@@ -89,6 +89,20 @@ div > div#recomecar:hover{
     transition: 1s;
 }
 
+footer{
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
 @media screen and (min-width: 769px){
     section{
         width: 700px;
