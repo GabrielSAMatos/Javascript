@@ -33,7 +33,7 @@ function falso(res){
 
 function pt2(){
     setTimeout(function(){
-        pergunta.innerHTML = 'Quem fala a frase "Vira homem, porr@!"'
+        pergunta.innerHTML = '<u>02</u> - Quem fala a frase "Vira homem, porr@!"'
         res1.innerHTML = 'Capitão Nascimento'
         res2.innerHTML = 'Bolsonaro'
         res3.innerHTML = 'Thomas Shelby'
@@ -43,7 +43,7 @@ function pt2(){
 
 function pt3(){
     setTimeout(function(){
-        pergunta.innerHTML = 'Qual o melhor urso?'
+        pergunta.innerHTML = '<u>03</u> - Qual o melhor urso?'
         res1.innerHTML = 'Pardo'
         res2.innerHTML = 'Negro'
         res3.innerHTML = 'Polar'
@@ -53,7 +53,7 @@ function pt3(){
 
 function pt4(){
     setTimeout(function(){
-        pergunta.innerHTML = 'Por qual gênero Gabriel SA Matos se identifica?'
+        pergunta.innerHTML = '<u>04</u> - Por qual gênero Gabriel SA Matos se identifica?'
         res1.innerHTML = 'Masculino'
         res2.innerHTML = 'Feminino'
         res3.innerHTML = 'Neutro'
@@ -79,10 +79,10 @@ function recomecar(){
         cont = 0
         acerto = 0
         res1.innerHTML = 'Sousa de Abreu'
-        res2.innerHTML = 'Santos de Almeida'
-        res3.innerHTML = 'Silva de Alcantra'
-        res4.innerHTML = 'Serbastião de Acarecanga'
-        pergunta.innerHTML = 'O que signfica "SA" de Gabriel SA Matos?'
+        res2.innerHTML = 'Souza de Abreu'
+        res3.innerHTML = 'Sousa Abreu'
+        res4.innerHTML = 'Souza Abreu'
+        pergunta.innerHTML = ' <u>01</u> - O que signfica "SA" de Gabriel SA Matos?'
 
         pergunta.style.display = 'block'
         res1.style.display = 'block'
