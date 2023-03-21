@@ -15,6 +15,7 @@ res3.addEventListener('click', clicar3)
 res4.addEventListener('click', clicar4)
 
 recomeco.addEventListener('click', recomecar)
+
 const intervalo = '800'
 
 function verdade(res){
