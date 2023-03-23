@@ -407,7 +407,7 @@ function clicaroff(){
 }
 
 function clicarsoma(){
-    if(contfuncao == 0){
+    if(contfuncao == 0 && ligado == true){
         tela.innerHTML += "+"
         fsoma = true
         contfuncao++
@@ -416,7 +416,7 @@ function clicarsoma(){
 }
 
 function clicarsub(){
-    if(contfuncao == 0){
+    if(contfuncao == 0 && ligado == true){
         tela.innerHTML += "-"
         fsub = true
         contfuncao++
@@ -425,7 +425,7 @@ function clicarsub(){
 }
 
 function clicarmult(){
-    if(contfuncao == 0){
+    if(contfuncao == 0 && ligado == true){
         tela.innerHTML += "*"
         fmult = true
         contfuncao++
@@ -434,7 +434,7 @@ function clicarmult(){
 }
 
 function clicardivi(){
-    if(contfuncao == 0){
+    if(contfuncao == 0 && ligado == true){
         tela.innerHTML += "/"
         fdivi = true
         contfuncao++
@@ -443,7 +443,7 @@ function clicardivi(){
 }
 
 function clicarraiz(){
-    if(contfuncao == 0){
+    if(contfuncao == 0 && ligado == true){
         tela.innerHTML += "√"
         fraiz = true
         contfuncao++
@@ -452,7 +452,7 @@ function clicarraiz(){
 }
 
 function clicarquad(){
-    if(contfuncao == 0){
+    if(contfuncao == 0 && ligado == true){
         tela.innerHTML += "^"
         fquad = true
         contfuncao++

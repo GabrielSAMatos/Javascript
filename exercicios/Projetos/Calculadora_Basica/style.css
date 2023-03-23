@@ -26,6 +26,10 @@ header > h1{
     margin-bottom: 40px;
 }
 
+body{
+    background-color: black;
+}
+
 section{
     background-color: var(--corcalculadora);
     padding: 25px;
@@ -34,8 +38,6 @@ section{
     border-radius: 10px;
 
 }
-
-
 
 #tela{
     background-color: var(--tela);
