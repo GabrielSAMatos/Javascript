@@ -28,6 +28,8 @@ let y = 0
 let cont = 0
 let qntx = 0
 let qnty = 0
+let primeirox = false
+let ligado = false
 /*
 Precisa de uma função para cada número ------ OK
 Precisa de uma função para ON/OFF/Sinais matemáticos
@@ -58,10 +60,16 @@ soma.addEventListener('click', clicarsoma)
 res.addEventListener('click', clicarres)
 
 function clicar0(){
-    if(cont == 0 && qntx <= 7){
-        x = 0
-        tela.innerHTML += x
-        qntx++
+    if(cont == 0 && qntx <= 7 && ligado == true){
+        if(primeirox == true){
+            x = 0
+            primeirox = false
+            tela.innerHTML = x
+        }else{
+            x = 0
+            tela.innerHTML += x
+            qntx++
+        }
     }else if(cont == 1 && qnty <= 7){
         y = 0
         qnty++
@@ -69,10 +77,16 @@ function clicar0(){
 }
 
 function clicar1(){
-    if(cont == 0 && qntx <= 7){
-        x = 1
-        tela.innerHTML += x
-        qntx++
+    if(cont == 0 && qntx <= 7 && ligado == true){
+        if(primeirox == true){
+            x = 1
+            primeirox = false
+            tela.innerHTML = x
+        }else{
+            x = 1
+            tela.innerHTML += x
+            qntx++
+        }
     }else if(cont == 1 && qnty <= 7){
         y = 1
         qnty++
@@ -80,10 +94,16 @@ function clicar1(){
 }
 
 function clicar2(){
-    if(cont == 0 && qntx <= 7){
-        x = 2
-        tela.innerHTML += x
-        qntx++
+    if(cont == 0 && qntx <= 7 && ligado == true){
+        if(primeirox == true){
+            x = 2
+            primeirox = false
+            tela.innerHTML = x
+        }else{
+            x = 2
+            tela.innerHTML += x
+            qntx++
+        }
     }else if(cont == 1 && qnty <= 7){
         y = 2
         qnty++
@@ -91,10 +111,16 @@ function clicar2(){
 }
 
 function clicar3(){
-    if(cont == 0 && qntx <= 7){
-        x = 3
-        tela.innerHTML += x
-        qntx++
+    if(cont == 0 && qntx <= 7 && ligado == true){
+        if(primeirox == true){
+            x = 3
+            primeirox = false
+            tela.innerHTML = x
+        }else{
+            x = 3
+            tela.innerHTML += x
+            qntx++
+        }
     }else if(cont == 1 && qnty <= 7){
         y = 3
         qnty++
@@ -102,10 +128,16 @@ function clicar3(){
 }
 
 function clicar4(){
-    if(cont == 0 && qntx <= 7){
-        x = 4
-        tela.innerHTML += x
-        qntx++
+    if(cont == 0 && qntx <= 7 && ligado == true){
+        if(primeirox == true){
+            x = 4
+            primeirox = false
+            tela.innerHTML = x
+        }else{
+            x = 4
+            tela.innerHTML += x
+            qntx++
+        }
     }else if(cont == 1 && qnty <= 7){
         y = 4
         qnty++
@@ -113,10 +145,16 @@ function clicar4(){
 }
 
 function clicar5(){
-    if(cont == 0 && qntx <= 7){
-        x = 5
-        tela.innerHTML += x
-        qntx++
+    if(cont == 0 && qntx <= 7 && ligado == true){
+        if(primeirox == true){
+            x = 5
+            primeirox = false
+            tela.innerHTML = x
+        }else{
+            x = 5
+            tela.innerHTML += x
+            qntx++
+        }
     }else if(cont == 1 && qnty <= 7){
         y = 5
         qnty++
@@ -124,10 +162,16 @@ function clicar5(){
 }
 
 function clicar6(){
-    if(cont == 0 && qntx <= 7){
-        x = 6
-        tela.innerHTML += x
-        qntx++
+    if(cont == 0 && qntx <= 7 && ligado == true){
+        if(primeirox == true){
+            x = 6
+            primeirox = false
+            tela.innerHTML = x
+        }else{
+            x = 6
+            tela.innerHTML += x
+            qntx++
+        }
     }else if(cont == 1 && qnty <= 7){
         y = 6
         qnty++
@@ -135,10 +179,16 @@ function clicar6(){
 }
 
 function clicar7(){
-    if(cont == 0 && qntx <= 7){
-        x = 7
-        tela.innerHTML += x
-        qntx++
+    if(cont == 0 && qntx <= 7 && ligado == true){
+        if(primeirox == true){
+            x = 7
+            primeirox = false
+            tela.innerHTML = x
+        }else{
+            x = 7
+            tela.innerHTML += x
+            qntx++
+        }
     }else if(cont == 1 && qnty <= 7){
         y = 7
         qnty++
@@ -146,10 +196,16 @@ function clicar7(){
 }
 
 function clicar8(){
-    if(cont == 0 && qntx <= 7){
-        x = 8
-        tela.innerHTML += x
-        qntx++
+    if(cont == 0 && qntx <= 7 && ligado == true){
+        if(primeirox == true){
+            x = 8
+            primeirox = false
+            tela.innerHTML = x
+        }else{
+            x = 8
+            tela.innerHTML += x
+            qntx++
+        }
     }else if(cont == 1 && qnty <= 7){
         y = 8
         qnty++
@@ -157,10 +213,16 @@ function clicar8(){
 }
 
 function clicar9(){
-    if(cont == 0 && qntx <= 7){
-        x = 9
-        tela.innerHTML += x
-        qntx++
+    if(cont == 0 && qntx <= 7 && ligado == true){
+        if(primeirox == true){
+            x = 9
+            primeirox = false
+            tela.innerHTML = x
+        }else{
+            x = 9
+            tela.innerHTML += x
+            qntx++
+        }
     }else if(cont == 1 && qnty <= 7){
         y = 9
         qnty++
@@ -168,11 +230,19 @@ function clicar9(){
 }
 
 function clicaron_ce(){
-
+    x = 0
+    y = 0
+    cont = 0
+    qntx = 0
+    qnty = 0
+    primeirox = true
+    ligado = true
+    tela.innerHTML = x
 }
 
 function clicaroff(){
-    
+    ligado = false
+    tela.innerHTML = ""
 }
 
 function clicardivi(){
