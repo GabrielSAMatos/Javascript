@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'tela';
+    src: url(Calculator.ttf);
+}
+
+:root{
+    --verde: #5d9791;
+    --corcalculadora: #7d7d7d; 
+    --botao: #0c0c0c; 
+    --tela: #c6d2bc;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1{
+    text-align: center;
+    padding: 20px;
+    background-color: var(--corcalculadora);
+    border-radius: 0px 0px 30px 30px;
+    margin-bottom: 40px;
+}
+
+section{
+    background-color: var(--corcalculadora);
+    padding: 25px;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+
+}
+
+
+
+#tela{
+    background-color: var(--tela);
+    font-size: 3.0em;
+    font-family: 'tela';
+    text-indent: 5px;
+    width: 291.5px;
+}
+
+#on_ce{
+    background-color: var(--verde);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-indent: 8px;
+    cursor: pointer;
+}
+
+#ce{
+    position: relative;
+    left: 8px;
+}
+
+#off{
+    padding: 30px 20.5px
+}
+
+section > .linha1, .linha2, .linha3, .linha4, #zero{
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    background-color: var(--botao);
+    color: white;
+    padding: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#divisao{
+    padding-right: 29.5px;
+}
+
+#igual{
+    background-color: var(--botao);
+    color: white;
+    padding: 19px 101px 24px 101px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.8em;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+}
