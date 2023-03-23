@@ -56,6 +56,12 @@ section{
     margin-bottom: 5px;
     text-indent: 8px;
     cursor: pointer;
+    border: 1px solid var(--verde);
+}
+
+#on_ce:hover{
+    border: 1.5px solid var(--botao);
+    transition: 0.5s;
 }
 
 #ce{
@@ -76,6 +82,16 @@ section > .linha1, .linha2, .linha3, .linha4, #zero{
     margin-top: 5px;
     cursor: pointer;
     border-radius: 10px;
+    border: 1px solid var(--botao);
+}
+
+section > .linha1:hover, .linha2:hover, .linha3:hover, .linha4:hover, #zero:hover{
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+#aoquadrado{
+    width: 10px;
 }
 
 #divisao{
@@ -92,4 +108,10 @@ section > .linha1, .linha2, .linha3, .linha4, #zero{
     border-radius: 10px;
     display: inline-block;
     font-family: 'Courier New', Courier, monospace;
+    border: 1px solid var(--botao);
+}
+
+#igual:hover{
+    border: 1px solid white;
+    transition: 0.5s;
 }
